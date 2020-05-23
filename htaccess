@@ -1,0 +1,7 @@
+
+# HTID:14044447: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:14044447:
+RewriteEngine on
+RewriteRule ^([0-9,a-z,A-Z]+)$ Route.php?id=$1 [L,QSA]
+RewriteRule ^/?api/([0-9,a-z,A-Z]+)$ api.php?link_id=$1
